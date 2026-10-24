@@ -1,0 +1,303 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1"]
+[ext_resource type="Theme" path="res://assets/game_theme.tres" id="2"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2")
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.08, 0.11, 0.2, 1)
+
+[node name="SchoolBuilding" type="ColorRect" parent="."]
+layout_mode = 1
+anchor_left = 0.1
+anchor_top = 0.55
+anchor_right = 0.9
+anchor_bottom = 0.95
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.14, 0.18, 0.28, 1)
+
+[node name="SchoolRoof" type="ColorRect" parent="SchoolBuilding"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = -20.0
+offset_bottom = 0.0
+grow_horizontal = 2
+color = Color(0.1, 0.14, 0.24, 1)
+
+[node name="Window1" type="ColorRect" parent="SchoolBuilding"]
+layout_mode = 1
+offset_left = 40.0
+offset_top = 30.0
+offset_right = 100.0
+offset_bottom = 70.0
+color = Color(0.85, 0.75, 0.45, 0.6)
+
+[node name="Window2" type="ColorRect" parent="SchoolBuilding"]
+layout_mode = 1
+offset_left = 120.0
+offset_top = 30.0
+offset_right = 180.0
+offset_bottom = 70.0
+color = Color(0.85, 0.75, 0.45, 0.4)
+
+[node name="Window3" type="ColorRect" parent="SchoolBuilding"]
+layout_mode = 1
+offset_left = 200.0
+offset_top = 30.0
+offset_right = 260.0
+offset_bottom = 70.0
+color = Color(0.85, 0.75, 0.45, 0.55)
+
+[node name="Window4" type="ColorRect" parent="SchoolBuilding"]
+layout_mode = 1
+offset_left = 320.0
+offset_top = 30.0
+offset_right = 380.0
+offset_bottom = 70.0
+color = Color(0.85, 0.75, 0.45, 0.3)
+
+[node name="Window5" type="ColorRect" parent="SchoolBuilding"]
+layout_mode = 1
+offset_left = 400.0
+offset_top = 30.0
+offset_right = 460.0
+offset_bottom = 70.0
+color = Color(0.85, 0.75, 0.45, 0.5)
+
+[node name="Door" type="ColorRect" parent="SchoolBuilding"]
+layout_mode = 1
+anchor_left = 0.45
+anchor_right = 0.55
+anchor_bottom = 1.0
+offset_top = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2, 0.28, 0.4, 1)
+
+[node name="Ground" type="ColorRect" parent="."]
+layout_mode = 1
+anchor_top = 0.95
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.12, 0.2, 0.15, 1)
+
+[node name="Sky" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 180.0
+grow_horizontal = 2
+color = Color(0.12, 0.18, 0.32, 0.6)
+
+[node name="Moon" type="ColorRect" parent="."]
+layout_mode = 1
+offset_left = 950.0
+offset_top = 40.0
+offset_right = 1010.0
+offset_bottom = 100.0
+color = Color(0.95, 0.9, 0.75, 0.7)
+
+[node name="Star1" type="ColorRect" parent="."]
+layout_mode = 1
+offset_left = 200.0
+offset_top = 50.0
+offset_right = 206.0
+offset_bottom = 56.0
+color = Color(1, 1, 0.85, 0.5)
+
+[node name="Star2" type="ColorRect" parent="."]
+layout_mode = 1
+offset_left = 500.0
+offset_top = 30.0
+offset_right = 505.0
+offset_bottom = 35.0
+color = Color(1, 1, 0.85, 0.4)
+
+[node name="Star3" type="ColorRect" parent="."]
+layout_mode = 1
+offset_left = 750.0
+offset_top = 65.0
+offset_right = 754.0
+offset_bottom = 69.0
+color = Color(1, 1, 0.85, 0.6)
+
+[node name="Star4" type="ColorRect" parent="."]
+layout_mode = 1
+offset_left = 1100.0
+offset_top = 45.0
+offset_right = 1105.0
+offset_bottom = 50.0
+color = Color(1, 1, 0.85, 0.35)
+
+[node name="TitleContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchor_left = 0.15
+anchor_top = 0.08
+anchor_right = 0.85
+anchor_bottom = 0.45
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Title" type="Label" parent="TitleContainer"]
+layout_mode = 2
+text = "BEHIND THE SMILE"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 48
+theme_override_colors/font_color = Color(0.85, 0.78, 0.55, 1)
+
+[node name="Subtitle" type="Label" parent="TitleContainer"]
+layout_mode = 2
+text = "\"Sometimes, the smallest choices make the biggest difference.\""
+horizontal_alignment = 1
+autowrap_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(0.7, 0.78, 0.82, 0.85)
+
+[node name="Spacer" type="Control" parent="TitleContainer"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 8)
+
+[node name="TeamName" type="Label" parent="TitleContainer"]
+layout_mode = 2
+text = "A game by Gamesmith"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(0.6, 0.65, 0.7, 0.7)
+
+[node name="MainButtons" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchor_left = 0.3
+anchor_top = 0.48
+anchor_right = 0.7
+anchor_bottom = 0.78
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="PlayButton" type="Button" parent="MainButtons"]
+layout_mode = 2
+custom_minimum_size = Vector2(320, 55)
+size_flags_horizontal = 4
+text = "▶  Play"
+
+[node name="Spacer1" type="Control" parent="MainButtons"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 8)
+
+[node name="HowToPlayButton" type="Button" parent="MainButtons"]
+layout_mode = 2
+custom_minimum_size = Vector2(320, 55)
+size_flags_horizontal = 4
+text = "📖  How to Play"
+
+[node name="Spacer2" type="Control" parent="MainButtons"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 8)
+
+[node name="QuitButton" type="Button" parent="MainButtons"]
+layout_mode = 2
+custom_minimum_size = Vector2(320, 55)
+size_flags_horizontal = 4
+text = "✕  Quit"
+
+[node name="HowToPlayPanel" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchor_left = 0.12
+anchor_top = 0.1
+anchor_right = 0.88
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="HowToPlayPanel"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="HowToPlayPanel/VBox"]
+layout_mode = 2
+text = "HOW TO PLAY"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 28
+theme_override_colors/font_color = Color(0.85, 0.78, 0.55, 1)
+
+[node name="HSeparator" type="HSeparator" parent="HowToPlayPanel/VBox"]
+layout_mode = 2
+
+[node name="Instructions" type="RichTextLabel" parent="HowToPlayPanel/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[b]Behind the Smile[/b] is a narrative adventure about empathy and choices.
+
+[b][color=#7ac5cd]GAMEPLAY[/color][/b]
+• Read the story as it unfolds on screen.
+• When choices appear, click one to decide your action.
+• Your choices are remembered and affect how characters respond.
+• Different choices lead to different endings.
+
+[b][color=#d4a86a]CONTROLS[/color][/b]
+• [b]Mouse Click[/b] — Select choices and advance dialogue.
+• [b]M Key[/b] — Open/close the Memory Log.
+
+[b][color=#b38aad]MEMORY LOG[/color][/b]
+• Press [b]M[/b] or click the Memory Log button during gameplay.
+• See what the game remembers about your actions.
+• The log shows established facts, your recorded interactions, and Maya's trust level.
+
+[b][color=#8aad8a]ABOUT[/color][/b]
+This game explores Problem 09 — NPC Memory Without Invented Lore.
+Maya remembers exactly what you did (and didn't do). She will never claim something happened that didn't.
+
+[b]Play through multiple times to see how different choices change the story![/b]"
+fit_content = false
+scroll_active = true
+
+[node name="BackButton" type="Button" parent="HowToPlayPanel/VBox"]
+layout_mode = 2
+size_flags_horizontal = 8
+custom_minimum_size = Vector2(160, 45)
+text = "← Back"
+
+[node name="VersionLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -28.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Behind the Smile v1.0 — Problem 09: NPC Memory Without Invented Lore"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 13
+theme_override_colors/font_color = Color(0.5, 0.55, 0.6, 0.5)
+
+[node name="ProblemBadge" type="Label" parent="."]
+layout_mode = 1
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 320.0
+offset_bottom = 32.0
+text = "Problem 09 — NPC Memory"
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.5, 0.55, 0.6, 0.4)

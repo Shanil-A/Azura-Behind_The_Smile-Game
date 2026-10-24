@@ -1,0 +1,16 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1792861050
+ARCHITECTURE.md::TextFile::-1::1792860469::0::1::::<><><>0<>0<><>::
+DEMO_SCRIPT.md::TextFile::-1::1792860673::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D::7338814876753160417::1792859980::1792861052::1::::<><><>0<>0<>79bb6c49c9f197671371f70b12258ec6<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1792860467::0::1::::<><><>0<>0<><>::
+TESTING.md::TextFile::-1::1792860671::0::1::::<><><>0<>0<><>::
+::res://assets/::1792860275
+game_theme.tres::Theme::-1::1792860275::0::1::::<><><>0<>0<><>::
+::res://scenes/::1792860254
+game.tscn::PackedScene::-1::1792860359::0::1::::<><><>0<>0<><>::res://scripts/game.gd<>res://assets/game_theme.tres
+main_menu.tscn::PackedScene::-1::1792860761::0::1::::<><><>0<>0<><>::res://scripts/main_menu.gd<>res://assets/game_theme.tres
+::res://scripts/::1792860213
+game.gd::GDScript::6009623273806348829::1792860715::0::1::::<>Control<><>0<>0<><>::
+main_menu.gd::GDScript::9003181822879164193::1792860213::0::1::::<>Control<><>0<>0<><>::
+memory_manager.gd::GDScript::5811220329002055433::1792860047::0::1::::<>Node<><>0<>0<><>::
